@@ -1,11 +1,12 @@
 import React,{Component} from "react";
 import "../../src/login.css"
+import Register from "./register";
 
 class  App extends Component{
     constructor(){
         super()
         this.state = {
-            username : " ",
+            username : "",
             password : ""
         }
     }
@@ -58,6 +59,7 @@ class  App extends Component{
                         <h3>G</h3>
                     </div>
                 </form>
+                <Register/>
             </div>
         );
     }
