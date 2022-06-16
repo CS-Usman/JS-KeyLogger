@@ -87,8 +87,8 @@ class Register extends Component{
                         value = {this.state.DOB}
                         onChange ={this.handleDOB}
                         />
-                        <select id="country" name="country">
-                            <option>select country</option>
+                        <select id="country" name="country" >
+                            <option value="" disabled selected hidden >select country</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AX">Aland Islands</option>
                             <option value="AL">Albania</option>
@@ -344,13 +344,13 @@ class Register extends Component{
                         </select>
                     </div>
                     <div>
-                    <select>
-                        <option>Gender</option>
+                    <select name="gender" required>
+                        <option value="" disabled selected hidden>Gender</option>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Prefer not to say</option>
-                        
                     </select>
+                    
                     </div>
                     <div>
                         <textarea placeholder="Comment anything"></textarea>
